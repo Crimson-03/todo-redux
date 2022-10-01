@@ -19,7 +19,6 @@ const Todos = () => {
     return (
         <Container>
             <Divider />
-            <Divider />
             <Card.Group>
                 {
                     todos.map(todo => (
