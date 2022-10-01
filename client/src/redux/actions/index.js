@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { ADDNEW_TODO, GETALL_TODO, TOGGLE_TODO, UPDATE_TODO, DELETE_TODO } from './type'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://todo-redux-backend.herokuapp.com'
 
 export const addNewTodo = (data) => async (dispatch) => {
     try {
