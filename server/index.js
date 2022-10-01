@@ -12,6 +12,11 @@ app.use(express.json({extended:true}))
 app.use(express.urlencoded({extended:true}))
 app.use('/', Routes)
 
+app.get("/", (req, res, next) => {
+    res.json({ message: "Hey! This is your server response!" });
+    next();
+});
+
 const PORT = process.env.PORT || 8000
 
 Connection()
