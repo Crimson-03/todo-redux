@@ -12,7 +12,7 @@ app.use(express.json({extended:true}))
 app.use(express.urlencoded({extended:true}))
 app.use('/', Routes)
 
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 
 Connection()
 
